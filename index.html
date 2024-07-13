@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Investimentos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+</head>
+<body>
+    
+    <header>
+        <h1 data-aos="fade-down">Bem-vindo à Nossa Plataforma de Investimentos</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Investir</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2 data-aos="fade-right">Como Funciona</h2>
+        <p data-aos="fade-left">Nossa plataforma permite que você invista de forma fácil e segura. Siga os passos abaixo para começar:</p>
+        <ul data-aos="fade-up">
+            <li>Criar uma conta</li>
+            <li>Depositar fundos</li>
+            <li>Escolher um plano de investimento</li>
+            <li>Monitorar seus investimentos</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2 data-aos="fade-up">Nossos Planos de Investimento</h2>
+        <div class="plans">
+            <div class="plan" data-aos="zoom-in">
+                <h3>Plano Básico</h3>
+                <p>Investimento inicial:  1.000KZ</p>
+                <p>Retorno: 5% ao mês</p>
+            </div>
+            <div class="plan" data-aos="zoom-in" data-aos-delay="200">
+                <h3>Plano Intermediário</h3>
+                <p>Investimento inicial:  5.000KZ</p>
+                <p>Retorno: 7% ao mês</p>
+            </div>
+            <div class="plan" data-aos="zoom-in" data-aos-delay="400">
+                <h3>Plano Avançado</h3>
+                <p>Investimento inicial:  10.000KZ</p>
+                <p>Retorno: 10% ao mês</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2 data-aos="fade-left">Formulário de Investimento</h2>
+        <form action="/submit-investment" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+                 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="amount">Quantia para Investir:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="payment-method">Método de Pagamento:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="credit-card">Cartão de Crédito</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Transferência Bancária</option>
+                
+            </select>
+
+            <button type="submit">Investir Agora</button>
+    
+           
+        </form>
+    </section>
+
+    <section>
+        <h2 data-aos="fade-up">Depoimentos</h2>
+        <div class="testimonials">
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+                <p>"Ótima plataforma, muito fácil de usar!" - Jorgelino</p>
+            </div>
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="200">
+                <p>"Consegui ótimos retornos com meus investimentos." - josé</p>
+            </div>
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="300">
+                <p>"Recomendo a todos que queiram investir com segurança." - Edson</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Plataforma de Investimentos. Todos os direitos reservados em JCA.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        
+        AOS.init();
+        
+    </script>
+    
+    <script src="script.js"></script>
+    </form>
+</body>
+</html>
